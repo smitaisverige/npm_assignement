@@ -1,0 +1,32 @@
+<%- include('../partials/head') %>
+<body>
+  <%- include('../partials/nav') %>
+
+  <header class="header">
+    <h1><%= pageTitle %></h1>
+    <p><%= subTitle %></p>
+  </header> <!--refer index.ejs-->
+
+  
+  <main class="main">
+    <div class="content-container">
+      <div class="image-box">
+        <img src="<%= image %>" alt="<%= pageTitle %>" class="featured-img">
+      </div>
+
+      <div class="text-box">
+        <h3>About <%= pageTitle %></h3>
+        <p><%= description %></p>
+        
+        <% if (locals.extraInfo) { %>
+          <div class="highlight-box">
+            <p><strong>Fun Fact:</strong> <%= extraInfo %></p>
+          </div>
+        <% } %>
+        <a href="/" class="btn back-btn">← Back to Home</a>
+      </div>
+    </div>
+  </main>
+
+  <%- include('../partials/footer') %>
+  

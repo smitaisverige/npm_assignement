@@ -1,0 +1,22 @@
+<%- include('../partials/head') %>
+<body>
+  <%- include('../partials/nav') %> <header class="header">
+    <h1 class="header_title"><%= title %></h1>
+    <h2 class="header_subtitle"><%= subTitle %></h2>
+  </header> <!-- different headers for index.js and feature pages so not making header partial -->
+
+  <main class="main">
+    <section class="section stock-color">
+      <h3>Stockholm</h3>
+      <p>Explore the capital built on 14 islands.</p>
+      <a href="/stockholm">Visit Stockholm</a>
+    </section>
+
+    <section class="section got-color">
+      <h3>Gotland</h3>
+      <p>Discover the medieval magic of the Baltic Sea.</p>
+      <a href="/gotland">Visit Gotland</a>
+    </section>
+  </main>
+
+  <%- include('../partials/footer') %>
